@@ -63,6 +63,8 @@ void fetchAndDrawAircraft() {
 }  // namespace
 
 void setup() {
+  pinMode(40, OUTPUT);
+  digitalWrite(40, HIGH);
   Serial.begin(115200);
   delay(500);
   Serial.println();
